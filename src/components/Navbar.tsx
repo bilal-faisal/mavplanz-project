@@ -7,15 +7,11 @@ import Logo from "../../public/logo.png";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    // <nav className="w-full absolute bg-white bg-opacity-50 backdrop-filter backdrop-blur-lg">
-    <nav className="w-full absolute bg-blue-300">
+    <nav className="w-full bg-blue-300">
       <div className="justify-between px-6 md:items-center md:flex">
         <div className="flex items-center justify-between py-3">
           <Link href="/" className="flex items-center">
-            <Image src={Logo} alt="Logo" className="mr-3" />
-            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-              Panaverse
-            </span> */}
+            <Image src={Logo} alt="Logo" className="mr-3" height={70} />
           </Link>
           <div className="md:hidden">
             <button
@@ -69,10 +65,10 @@ export default function Navbar() {
                 <Link href={"/services"}>Services</Link>
               </li>
               <li className="text-sky-900 text-lg">
-                <Link href={"/about"}>About Us</Link>
+                <Link href={"/about_us"}>About Us</Link>
               </li>
               <li className="text-sky-900 text-lg">
-                <Link href={"/contact"}>Contact Us</Link>
+                <Link href={"/contact_us"}>Contact Us</Link>
               </li>
             </ul>
           </div>
